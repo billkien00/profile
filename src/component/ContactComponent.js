@@ -2,7 +2,11 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 
 export default function ContactComponent() {
-  const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } });
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 200,
+  });
   const cons = {
     backgroundColor: "#e0d010",
     marginLeft: "10px",
